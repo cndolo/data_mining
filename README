@@ -1,0 +1,22 @@
+This package contains 2 programms that perfom image clustering using the DBSCAN and k-means algorithms.
+
+The programs were written in python 3.7.0. 
+Downward compatability should be possible but has not been tested.
+The programs were implemented in Linux 4.x, and should run on any Linux distribution.
+The programs have also been succesfully tested on MacOS, High Sierra, with Python 3.x.
+
+The following packages are required, and are usually included in python:
+	PIL
+
+In the unlikely event that you do not have them on your system, you can install them with the widespread python packet manager pip:
+	'pip install --user Pillow'
+
+Running k_means:
+	k_means.py -i <inputfile> -o <outputfile> -k <value> 
+	with i = image to cluster
+		 o = output path for clustered image
+		 k = number of partitions
+
+	Example usage: k_means.py -i tiger.png -o clustered_tiger.png -k 3
+	
+Running k_means.py -h displays a brief usage guide.	
